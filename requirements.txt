@@ -1,0 +1,9 @@
+# GrandLeveler IRC Bot Requirements
+# Python 3.7+ required
+
+# No external dependencies required - uses only Python standard library
+# The bot is designed to be lightweight and self-contained
+
+# Optional: For enhanced logging and monitoring
+# colorlog>=6.0.0  # Colored console logging
+# watchdog>=2.1.0  # File system monitoring for log changes

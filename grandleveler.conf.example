@@ -1,0 +1,30 @@
+[DEFAULT]
+# Log file path for WeeChat logs
+log_file = /path/to/your/weechat/logs/irc.rizon.#channel.log
+
+# Reputation system settings
+reputation_cooldown = 3600  # 1 hour cooldown between reputation changes
+leveling_interval = 4200    # 70 minutes between leveling attempts
+
+[network:rizon]
+# IRC server connection details
+server = irc.rizon.net/6667
+ssl = on
+bot_nick = GrandLevelerBot,GrandLeveler,GrandLeveler_
+ident = grandleveler
+realname = GrandLeveler Bot
+channel = #yourchannel
+
+# Admin users (comma-separated, case-insensitive)
+admin = YourNick,AnotherAdmin
+
+# Flood control
+flood_control_delay = 1.0
+
+# Auto-join and reputation leveling settings
+[channel:rizon:#yourchannel]
+auto_join = on
+reputation_leveling = on
+
+# Optional: Perform commands after connecting (e.g., NickServ auth)
+# perform = PRIVMSG NickServ :IDENTIFY your_password
