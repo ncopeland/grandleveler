@@ -32,7 +32,7 @@ Edit `grandleveler.conf` to configure the bot:
 ```ini
 [DEFAULT]
 # Log file to parse for reputation scores
-log_file = /home/boliver/.local/share/weechat/logs/irc.rizon.#computertech.weechatlog
+log_file = /path/to/your/weechat/logs/irc.rizon.#channel.weechatlog
 
 # Timing configuration
 reputation_cooldown = 3600  # 1 hour in seconds
@@ -44,10 +44,9 @@ server = irc.rizon.net/6667
 ssl = off
 bot_nick = GrandLeveler,GL,GrandL,Leveler
 ident = gleveler
-channel = #computertech
-perform = PRIVMSG nickserv :identify YOUR_PASSWORD_HERE ; PRIVMSG Boliver :I am here
-owner = Boliver
-admin = loulan,nevodka
+channel = #yourchannel
+perform = PRIVMSG nickserv :identify YOUR_PASSWORD_HERE
+admin = YourNick,AnotherAdmin
 ```
 
 ## Usage
